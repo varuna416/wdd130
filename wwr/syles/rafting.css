@@ -1,89 +1,110 @@
 :root {
-  --primary-color: #003049;
-  --secondary-color: #669bbc;
-  --accent1-color: #f77f00;
-  --accent2-color: #eae2b7;
+    --primary-color: #003049;
+    --secondary-color: #669bbc;
+    --accent1-color: #f77f00;
+    --accent2-color: #eae2b7;
 
-  --heading-font: "Arial Black", sans-serif;
-  --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Arial Black", sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    font-family: var(--body-font);
+    color: #333;
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-.socialmedia a {
-  text-decoration: none;
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
 }
 
 .hero {
-  position: relative;
+    position: relative;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
+/* Hero heading overlay */
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.75;
-  background-color: var(--accent1-color);
-  color: white;
-  font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  background: white;
-  opacity: 0.85;
-  padding: 16px;
-  width: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    opacity: 0.9;
+    padding: 16px;
+    width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
-  border-radius: 4px;
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 6px;
 }
 
 footer {
-  text-align: center;
-  padding-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
-  margin: 0 8px;
+    margin: 0 8px;
 }
