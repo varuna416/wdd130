@@ -1,7 +1,7 @@
 :root {
     --primary-color: #003049;
     --secondary-color: #669bbc;
-    --accent1-color: #f77f00;
+    --accent1-color: #f77f00;  
     --accent2-color: #eae2b7;
 
     --heading-font: "Arial Black", sans-serif;
@@ -19,7 +19,7 @@
 body {
     font-family: var(--body-font);
     color: #333;
-    background-color: var(--accent2-color); 
+    background-color: var(--accent2-color);
 }
 
 header,
@@ -54,7 +54,7 @@ nav a {
 
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent1-color); 
 }
 
 .hero {
@@ -105,6 +105,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding-bottom: 20px;
+    border-top: 4px solid var(--accent1-color); 
 }
 
 .socialmedia a {
