@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header>
         <img src="images/logo.png" alt="RapidRush Rafting Logo" width="120">
 
@@ -24,68 +25,87 @@
     </header>
 
     <main>
+
         <section class="contact-info">
             <h1>Contact Us</h1>
-            <p><strong>Address:</strong> 2151 San Miguel Dr, Walnut Creek CA 94596 </p>
-            <p><strong>Phone:</strong> (925) 932-8993 </p>
+            <p><strong>Address:</strong> 2151 San Miguel Dr, Walnut Creek CA 94596</p>
+            <p><strong>Phone:</strong> (925) 932-8993</p>
             <p><strong>Email:</strong> info@rapidrushrafting.com</p>
 
             <div class="map-container">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.826696806996!2d-122.04221519999999!3d37.8877354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561d58c26a8a1%3A0x5542df3f3637c8b3!2s2151%20San%20Miguel%20Dr%2C%20Walnut%20Creek%2C%20CA%2094596%2C%20USA!5e0!3m2!1sen!2sca!4v1764909098189!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </section>
 
         <section class="team">
             <h2>Meet Our Team</h2>
+
             <div class="team-gallery">
+
                 <figure>
                     <img src="images/employee1.jpg" alt="John Burt - CEO">
                     <figcaption>John Burt - CEO</figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/employee2.jpg" alt="Alex Smith - Head Guide">
                     <figcaption>Alex Smith - Head Guide</figcaption>
                 </figure>
+
                 <figure>
-                    <img src="images/employee3.jpg" alt="Emily Brown- Reservations">
-                    <figcaption>Emily Brown- - Reservations</figcaption>
+                    <img src="images/employee3.jpg" alt="Emily Brown - Reservations">
+                    <figcaption>Emily Brown - Reservations</figcaption>
                 </figure>
+
             </div>
         </section>
 
         <section class="contact-form">
             <h2>Send Us a Message</h2>
+
             <form action="#" method="post">
+
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <p>Purpose of Message:</p>
-                <label>
-                    <input type="radio" name="purpose" value="general" required> General Inquiry
-                </label>
-                <label>
-                    <input type="radio" name="purpose" value="reservation"> Reservation Question
-                </label>
-                <label>
-                    <input type="radio" name="purpose" value="website"> Website Suggestion
-                </label>
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
+                        Website Suggestion
+                    </label>
+                </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit" class="submit-btn">Send Message</button>
+
             </form>
         </section>
+
     </main>
 
     <footer>
@@ -95,14 +115,17 @@
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook Icon" width="30">
             </a>
+
             <a href="https://linkedin.com">
                 <img src="images/linkedin.svg" alt="LinkedIn Icon" width="30">
             </a>
+
             <a href="https://instagram.com">
                 <img src="images/instagram.svg" alt="Instagram Icon" width="30">
             </a>
         </nav>
     </footer>
+
 </body>
 
 </html>
