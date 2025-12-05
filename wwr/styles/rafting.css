@@ -109,3 +109,73 @@ footer {
     margin: 0 8px;
 }
 
+.contact-info h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.map-container iframe {
+    border-radius: 6px;
+    border: 2px solid var(--secondary-color);
+}
+
+.team-gallery {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+.team-gallery figure {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.team-gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.submit-btn {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+}
